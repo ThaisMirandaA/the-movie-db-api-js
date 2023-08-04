@@ -1,0 +1,106 @@
+:root {
+    background-color: #17162e;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    max-width: 1260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: var(--background-color);
+    margin: 0 auto;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-busca {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 44.65px;
+    font-weight: 600;
+}
+
+.input-container {
+    display: flex;
+    background-color: #454558;
+    width: 400px;
+    border-radius: 6px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+#input-pesquisar {
+    width: 300px;
+    color: #8A8A8A;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+}
+
+#botao-pesquisar {
+    background-color: transparent;
+    border: none;
+}
+
+.titulos {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.container-filmes {
+    display: flex;
+    align-items: center;
+    background-color: #1D1C3B;
+    width: 1000px;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container-imagem-filme {
+    margin: 30px 20px; 
+}
+
+.imagem-filme {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+
+.titulo-filme {
+    display: block;
+    color: #FFFFFF;
+    width: 220px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 22.32px;
+}
+
+.nota-favorito {
+    display: flex;
+    margin-right: 100px;
+}
+
+.descricao {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 31.86px;
+}

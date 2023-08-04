@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Movies</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="caixa">
+        <main>
+            <div class="container-busca">
+                <h1>Filmes Populares</h1>
+                <form>
+                    <div class="input-container">
+                        <input id="input-pesquisar" type="text" data-input-pesquisa
+                            placeholder="Digite algum filme para pesquisar...">
+                        <button id="botao-pesquisar" data-botao-pesquisar type="submit"><img src="./img/search-icon.svg"
+                                alt="Ícone de pesquisa"></button>
+                    </div>
+                </form>
+                <div>
+                    <input id="caixa-checkbox" name="only-favorites" type="checkbox">
+                    <label class="titulos">Mostrar meus filmes favoritos apenas</label>
+                </div>
+            </div>
+
+            <div class="filmes" data-filmes>
+                
+            </div>
+        </main>
+    </div>
+    <script src="./js/script.js" type="module" ></script>
+</body>
+
+</html>
