@@ -1,14 +1,16 @@
-import { buscaFilmesPopulares } from "./conectaApi.js";
-import { renderizaFilme } from "./renderizaFilme.js";
-import { buscaPesquisa } from "./buscaFilme.js";
+import { searchPopularMovies } from "./apiConnect.js";
+import { renderMovie } from "./renderMovies.js";
+import { movieSearch } from "./movieSearch.js";
+import { getOnlyFavorites } from "./favoritesFilter.js";
 
 
-const botaoPesquisar = document.querySelector('[data-botao-pesquisar]');
+const buttonSearch = document.querySelector('[data-button-search]');
 
 window.onload = async function () {
-    const filmesPopularesApi = await buscaFilmesPopulares();
-    filmesPopularesApi.results.forEach(filme => renderizaFilme(filme));
-    botaoPesquisar.addEventListener('click', evento => buscaPesquisa(evento));
+    const popularMoviesApi = await searchPopularMovies();
+    popularMoviesApi.results.forEach(movie => renderMovie(movie));
+    buttonSearch.addEventListener('click', event => movieSearch(event));
+    getOnlyFavorites();
 }
 
 
