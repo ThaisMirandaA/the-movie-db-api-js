@@ -53,6 +53,11 @@ h1 {
     border: none;
 }
 
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
 #botao-pesquisar {
     background-color: transparent;
     border: none;
@@ -95,6 +100,11 @@ h1 {
 .nota-favorito {
     display: flex;
     margin-right: 100px;
+}
+
+.favoritar {
+    background-color: transparent;
+    border: none;
 }
 
 .descricao {

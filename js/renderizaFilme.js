@@ -1,11 +1,16 @@
+import { favoritarFilmes } from "./favoritaFilmes.js";
+import { verificaSeOFilmeEFavorito } from "./favoritaFilmes.js";
+
 export const listaDeFilmes = document.querySelector('[data-filmes]');
 
 export function renderizaFilme(filme) {
-    const { title, poster_path, vote_average, release_date, overview } = filme;
+    const { id, title, poster_path, vote_average, release_date, overview } = filme;
 
     const year = new Date(release_date).getFullYear();
 
     const image = `https://image.tmdb.org/t/p/w500${poster_path}`;
+
+    const filmeEFavorito = verificaSeOFilmeEFavorito(id); 
 
     // cria a caixa que vai englobar todos os filmes:
     const novoFilme = document.createElement('div');
@@ -43,8 +48,9 @@ export function renderizaFilme(filme) {
     // cria a div somente de favoritos:
     const favoritar = document.createElement('div');
     const imagemCoracao = document.createElement('img');
-    imagemCoracao.src = filme.favorito ? "./img/Heart-fill.svg" : "./img/Heart.svg";
+    imagemCoracao.src = filmeEFavorito ? "./img/Heart-fill.svg" : "./img/Heart.svg";
     imagemCoracao.alt = "Heart Icon";
+    imagemCoracao.addEventListener('click', (evento) => favoritarFilmes(evento, filme, id));
     const textoFavoritar = document.createElement('span');
     textoFavoritar.classList.add('titulos');
     textoFavoritar.textContent = "Favoritar";
@@ -67,4 +73,6 @@ export function renderizaFilme(filme) {
     novoFilme.appendChild(informacoesFilme);
     novoFilme.appendChild(descriçãoFilme);
     listaDeFilmes.appendChild(novoFilme);
+
 }
+
