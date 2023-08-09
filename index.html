@@ -13,30 +13,30 @@
 </head>
 
 <body>
-    <div class="caixa">
+    <div class="max-container">
         <main>
-            <div class="container-busca">
+            <div class="container-search">
                 <h1>Filmes Populares</h1>
                 <form>
                     <div class="input-container">
-                        <input id="input-pesquisar" type="text" data-input-pesquisa
-                            placeholder="Digite algum filme para pesquisar...">
-                        <button id="botao-pesquisar" data-botao-pesquisar type="submit"><img src="./img/search-icon.svg"
+                        <input id="input-search" type="text" data-input-search
+                            placeholder="Digite algum filme para pesquisar">
+                        <button id="button-search" data-button-search type="submit"><img src="./img/search-icon.svg"
                                 alt="Ícone de pesquisa"></button>
                     </div>
                 </form>
                 <div>
-                    <input id="caixa-checkbox" name="only-favorites" type="checkbox">
-                    <label class="titulos">Mostrar meus filmes favoritos apenas</label>
+                    <input id="caixa-checkbox" name="only-favorites" type="checkbox" data-favorites-filter>
+                    <label class="titles">Mostrar meus filmes favoritos apenas</label>
                 </div>
             </div>
 
-            <div class="filmes" data-filmes>
-                
+            <div class="filmes" data-movies>
+
             </div>
         </main>
     </div>
-    <script src="./js/script.js" type="module" ></script>
+    <script src="./js/script.js" type="module"></script>
 </body>
 
 </html>

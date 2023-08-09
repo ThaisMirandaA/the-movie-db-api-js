@@ -13,13 +13,13 @@ body {
     margin: 0 auto;
 }
 
-.caixa {
+.max-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container-busca {
+.container-search {
     margin-top: 40px;
     margin-bottom: 40px;
     display: flex;
@@ -45,7 +45,7 @@ h1 {
     padding: 12px;
 }
 
-#input-pesquisar {
+#input-search {
     width: 300px;
     color: #8A8A8A;
     font-size: 16px;
@@ -58,17 +58,17 @@ input:focus {
     outline: 0;
 }
 
-#botao-pesquisar {
+#button-search {
     background-color: transparent;
     border: none;
 }
 
-.titulos {
+.titles {
     color: #FFFFFF;
     font-weight: 600;
 }
 
-.container-filmes {
+.container-movies {
     display: flex;
     align-items: center;
     background-color: #1D1C3B;
@@ -78,17 +78,16 @@ input:focus {
     margin-bottom: 40px;
 }
 
-.container-imagem-filme {
-    margin: 30px 20px; 
+.container-image-movie {
+    margin: 30px 20px;
 }
 
-.imagem-filme {
+.imagem-movie {
     max-height: 200px;
     max-width: 200px;
 }
 
-
-.titulo-filme {
+.movie-title {
     display: block;
     color: #FFFFFF;
     width: 220px;
@@ -97,17 +96,12 @@ input:focus {
     line-height: 22.32px;
 }
 
-.nota-favorito {
+.note-favorite {
     display: flex;
     margin-right: 100px;
 }
 
-.favoritar {
-    background-color: transparent;
-    border: none;
-}
-
-.descricao {
+.description {
     color: #FFFFFF;
     font-size: 16px;
     text-align: justify;
